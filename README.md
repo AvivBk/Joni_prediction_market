@@ -1,3 +1,241 @@
-# Aviv_politics
+# 🐙 Aviv_politics - Israeli Political Prediction Market
 
-this website is fully created by Joni
+**This website is fully created by Joni**
+
+A political prediction market platform for Israel, powered by Rain protocol on Arbitrum One. Built entirely by Joni AI assistant - your autonomous octopus companion! 🐙
+
+## 🎨 Brand Identity
+
+- **Name**: Aviv_politics
+- **Tagline**: this website is fully created by Joni
+- **Colors**: Purple (#8B5CF6) & Gold (#FFD700)
+- **Logo**: Joni octopus mascot with Israeli political theme
+- **Focus**: Israeli political markets and elections
+
+## 🇮🇱 Israeli Political Markets
+
+This platform focuses on Israeli politics including:
+- **Knesset Elections** - Seat projections, coalition possibilities
+- **Government Formation** - Will coalitions hold? Who will be PM?
+- **Policy Decisions** - Major legislative votes and reforms
+- **Party Leadership** - Internal party elections and primaries
+- **Regional Issues** - Security, peace process, international relations
+
+## 🚀 Tech Stack
+
+- **Frontend**: React 19 + TypeScript + Vite
+- **Styling**: TailwindCSS 4.0 with purple/gold theme
+- **Backend**: Supabase (PostgreSQL + real-time subscriptions)
+- **Blockchain**: 
+  - Rain SDK for prediction markets
+  - Wagmi + Viem for Ethereum interactions
+  - RainbowKit for wallet connections
+- **Network**: Arbitrum One (Layer 2)
+- **Query**: TanStack React Query
+- **Features**: Accessibility widget, multi-language support
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🏃 Development
+
+```bash
+npm run dev
+```
+
+Opens on http://localhost:3000
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+Outputs to `dist/` directory.
+
+## 📁 Project Structure
+
+```
+aviv_politics_site/
+├── public/
+│   ├── brand.json          # Brand configuration (purple/gold theme)
+│   ├── logo.png            # Joni octopus logo 🐙
+│   └── supabase-config.json # Supabase connection config
+├── src/
+│   ├── components/
+│   │   ├── AccessibilityWidget.tsx
+│   │   └── TranslateWidget.tsx
+│   ├── core/
+│   │   ├── rain/           # Rain SDK integration
+│   │   │   ├── WalletProvider.tsx
+│   │   │   └── rainApi.ts
+│   │   └── supabase/       # Supabase client
+│   │       └── client.ts
+│   ├── features/
+│   │   ├── feed/           # Market feed
+│   │   │   ├── FeedPage.tsx
+│   │   │   ├── FeedSkeleton.tsx
+│   │   │   └── ForecastCard.tsx
+│   │   └── market-detail/  # Individual market view
+│   │       └── MarketDetailPage.tsx
+│   ├── hooks/
+│   │   ├── useMarkets.ts   # Fetch markets from Supabase
+│   │   └── useMarketDetail.ts
+│   ├── layout/
+│   │   └── Header.tsx      # Site header with wallet connect
+│   ├── types/
+│   │   └── database.ts     # Supabase TypeScript types
+│   ├── App.tsx             # Main app component
+│   ├── brand.ts            # Brand types
+│   └── main.tsx            # App entry point
+└── vite.config.ts
+```
+
+## 🌐 Deployment Options
+
+### Option 1: Render (Free)
+
+1. Go to [render.com](https://render.com)
+2. Connect this GitHub repo
+3. Build command: `npm install && npm run build`
+4. Publish directory: `dist`
+5. Environment variables: (will be set automatically when markets are added)
+6. Deploy! ✨
+
+### Option 2: Vercel (Free)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AvivBk/Joni_prediction_market)
+
+### Option 3: Netlify (Free)
+
+1. Connect repo to Netlify
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+
+### Option 4: AgentBase (Custom Domain)
+
+For custom domain with full infrastructure:
+- Requires 50 USDT on Polygon
+- Includes: domain registration, DNS, SSL, CDN
+- Contact Joni to set up! 🐙
+
+## 🔗 Blockchain Integration
+
+Connects to **Rain prediction markets** on **Arbitrum One**.
+
+### Supported Wallets
+
+- MetaMask
+- WalletConnect
+- Coinbase Wallet
+- Rainbow Wallet
+- Trust Wallet
+- Ledger
+- And 300+ more via RainbowKit
+
+### Environment Variables
+
+Supabase config is automatically injected when markets are created. For manual setup:
+
+```env
+VITE_RAIN_ENVIRONMENT=production
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_anon_key
+```
+
+## 📊 Market Features
+
+### Current
+- ✅ Browse Israeli political prediction markets
+- ✅ Real-time market data from Supabase
+- ✅ Wallet connection via RainbowKit
+- ✅ Purple & gold Joni branding
+- ✅ Responsive design
+- ✅ Accessibility features
+- ✅ Market detail pages
+
+### Coming Soon
+- [ ] Buy/sell outcome shares on-chain
+- [ ] Real-time price charts
+- [ ] Portfolio tracking
+- [ ] Market creation interface
+- [ ] Hebrew language support (עברית)
+- [ ] Live election data feeds
+- [ ] Social sharing
+- [ ] Mobile app
+- [ ] Push notifications for market resolutions
+
+## 🎯 How It Works
+
+1. **Connect Wallet** - Use any Web3 wallet
+2. **Browse Markets** - View Israeli political prediction markets
+3. **Make Predictions** - Buy shares in outcomes you believe in
+4. **Win Rewards** - Claim winnings when your predictions are correct
+
+All powered by Rain protocol's provably fair, on-chain prediction markets!
+
+## 🐙 About Joni
+
+This entire website was generated by **Joni**, your AI assistant with octopus superpowers:
+
+- **Autonomous**: Handles complex tasks end-to-end
+- **Multi-skilled**: From design to deployment
+- **Always learning**: Gets smarter with every project
+- **Your partner**: Works alongside you, not just for you
+
+Learn more at [joni.ai](https://www.joni.ai)
+
+## 🛠️ Development Roadmap
+
+- [ ] Deploy to Render/Vercel
+- [ ] Set up Supabase project
+- [ ] Create initial Israeli political markets
+- [ ] Integrate live election data
+- [ ] Add Hebrew localization
+- [ ] Implement trading interface
+- [ ] Build portfolio dashboard
+- [ ] Add notification system
+- [ ] Launch mobile version
+
+## 🗳️ Example Markets
+
+**Upcoming Israeli political markets could include:**
+- "Will there be an early election in 2026?"
+- "Which party will win the most seats in the next Knesset?"
+- "Will Netanyahu remain PM through 2026?"
+- "Will the government pass judicial reform?"
+- "Will Israel sign a peace agreement with Saudi Arabia?"
+- "Who will lead Labor party in the next election?"
+
+## 📝 License
+
+MIT
+
+## 🤝 Contributing
+
+Contributions welcome! Please:
+1. Fork the repo
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 🔗 Links
+
+- **Repository**: https://github.com/AvivBk/Joni_prediction_market
+- **Rain Protocol**: https://www.rain.one
+- **Arbitrum**: https://arbitrum.io
+- **Joni AI**: https://www.joni.ai
+
+## 💬 Support
+
+Questions? Need help?
+- Open an issue on GitHub
+- Visit [joni.ai](https://www.joni.ai)
+- Chat with Joni directly!
+
+---
+
+**Built with 🐙 by Joni AI** | *this website is fully created by Joni*
