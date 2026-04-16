@@ -1,0 +1,142 @@
+[
+  {
+    "id": "market-001",
+    "question": "Will Benjamin Netanyahu remain Prime Minister through the end of 2026?",
+    "description": "This market resolves YES if Netanyahu continues as Prime Minister of Israel until December 31, 2026. Resolves NO if he leaves office for any reason (resignation, no-confidence vote, coalition collapse, etc.) before that date.",
+    "tags": ["Netanyahu", "Israeli Politics", "Government", "Prime Minister"],
+    "options": [
+      {"name": "Yes", "probability": 0.55, "price": "$0.55"},
+      {"name": "No", "probability": 0.45, "price": "$0.45"}
+    ],
+    "volume": "$100",
+    "liquidity": "$10",
+    "endDate": "2026-07-15",
+    "status": "active"
+  },
+  {
+    "id": "market-002",
+    "question": "Will there be early Knesset elections in 2026?",
+    "description": "This market resolves YES if Israeli Knesset elections are held before the scheduled date in late 2026. Resolves NO if no early elections occur or if elections happen on schedule.",
+    "tags": ["Knesset", "Elections", "Israeli Politics", "Democracy"],
+    "options": [
+      {"name": "Yes", "probability": 0.40, "price": "$0.40"},
+      {"name": "No", "probability": 0.60, "price": "$0.60"}
+    ],
+    "volume": "$85",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-003",
+    "question": "Will the judicial reform bill pass by end of 2026?",
+    "description": "This market resolves YES if comprehensive judicial reform legislation is passed and enacted into law by December 31, 2026. Resolves NO if no such reform passes.",
+    "tags": ["Judicial Reform", "Law", "Israeli Politics", "Judiciary"],
+    "options": [
+      {"name": "Yes", "probability": 0.35, "price": "$0.35"},
+      {"name": "No", "probability": 0.65, "price": "$0.65"}
+    ],
+    "volume": "$120",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-004",
+    "question": "Will Israel sign a normalization agreement with Saudi Arabia in 2026?",
+    "description": "This market resolves YES if Israel and Saudi Arabia sign an official diplomatic normalization agreement in 2026. Resolves NO if no such agreement is signed.",
+    "tags": ["Saudi Arabia", "Peace", "Diplomacy", "Middle East", "Abraham Accords"],
+    "options": [
+      {"name": "Yes", "probability": 0.25, "price": "$0.25"},
+      {"name": "No", "probability": 0.75, "price": "$0.75"}
+    ],
+    "volume": "$150",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-005",
+    "question": "Will the current coalition government remain intact through 2026?",
+    "description": "This market resolves YES if Netanyahu's current coalition partners all remain in government until December 31, 2026. Resolves NO if any coalition party leaves.",
+    "tags": ["Coalition", "Government", "Israeli Politics", "Stability"],
+    "options": [
+      {"name": "Yes", "probability": 0.45, "price": "$0.45"},
+      {"name": "No", "probability": 0.55, "price": "$0.55"}
+    ],
+    "volume": "$95",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-006",
+    "question": "Will Benny Gantz return to government in 2026?",
+    "description": "This market resolves YES if Benny Gantz (National Unity party leader) joins the government in any capacity in 2026. Resolves NO if he remains in opposition.",
+    "tags": ["Benny Gantz", "National Unity", "Coalition", "Israeli Politics"],
+    "options": [
+      {"name": "Yes", "probability": 0.30, "price": "$0.30"},
+      {"name": "No", "probability": 0.70, "price": "$0.70"}
+    ],
+    "volume": "$75",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-007",
+    "question": "Will Yair Lapid's party win the most seats in the next election?",
+    "description": "This market resolves YES if Yesh Atid (led by Yair Lapid) wins more Knesset seats than any other party in the next election. Resolves NO otherwise.",
+    "tags": ["Yair Lapid", "Yesh Atid", "Elections", "Knesset", "Opposition"],
+    "options": [
+      {"name": "Yes", "probability": 0.35, "price": "$0.35"},
+      {"name": "No", "probability": 0.65, "price": "$0.65"}
+    ],
+    "volume": "$110",
+    "liquidity": "$10",
+    "endDate": "2027-01-01",
+    "status": "active"
+  },
+  {
+    "id": "market-008",
+    "question": "Will Itamar Ben-Gvir remain as National Security Minister through 2026?",
+    "description": "This market resolves YES if Itamar Ben-Gvir continues as National Security Minister until December 31, 2026. Resolves NO if he is removed or resigns.",
+    "tags": ["Ben-Gvir", "National Security", "Government", "Coalition"],
+    "options": [
+      {"name": "Yes", "probability": 0.50, "price": "$0.50"},
+      {"name": "No", "probability": 0.50, "price": "$0.50"}
+    ],
+    "volume": "$90",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-009",
+    "question": "Will Israel conduct a major military operation in Gaza in 2026?",
+    "description": "This market resolves YES if Israel launches a significant military ground operation in Gaza involving thousands of troops in 2026. Resolves NO if no such operation occurs.",
+    "tags": ["Gaza", "Military", "Security", "Defense", "Operations"],
+    "options": [
+      {"name": "Yes", "probability": 0.40, "price": "$0.40"},
+      {"name": "No", "probability": 0.60, "price": "$0.60"}
+    ],
+    "volume": "$130",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  },
+  {
+    "id": "market-010",
+    "question": "Will the Bank of Israel lower interest rates below 4% in 2026?",
+    "description": "This market resolves YES if the Bank of Israel's key interest rate falls below 4.00% at any point in 2026. Resolves NO if rates remain at or above 4%.",
+    "tags": ["Economy", "Interest Rates", "Bank of Israel", "Monetary Policy"],
+    "options": [
+      {"name": "Yes", "probability": 0.45, "price": "$0.45"},
+      {"name": "No", "probability": 0.55, "price": "$0.55"}
+    ],
+    "volume": "$105",
+    "liquidity": "$10",
+    "endDate": "2026-12-31",
+    "status": "active"
+  }
+]
