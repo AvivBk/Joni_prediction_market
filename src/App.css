@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* ── Accessibility classes (toggled by AccessibilityWidget) ─────────────── */
+
+html.a11y-contrast {
+  filter: contrast(1.5);
+}
+html.a11y-contrast img {
+  filter: contrast(0.9);
+}
+
+html.a11y-large {
+  font-size: 120%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.a11y-reduce-motion *,
+  html.a11y-reduce-motion *::before,
+  html.a11y-reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Google Translate widget dark-mode styling ──────────────────────────── */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 13px !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #ccc !important;
+}
+.goog-te-menu-frame {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6) !important;
+}

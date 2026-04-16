@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviv_politics</title>
+    <style>
+      /* Brand colors set at build time — always correct, no race condition */
+      :root {
+        --primary-color: #8B5CF6;
+        --accent-color: #FFD700;
+      }
+    </style>
+    <script>
+      /* Override with live brand.json values when available */
+      fetch('/brand.json')
+        .then(r => r.json())
+        .then(b => {
+          document.documentElement.style.setProperty('--primary-color', b.primaryColor || '#8B5CF6');
+          document.documentElement.style.setProperty('--accent-color', b.accentColor || b.primaryColor || '#FFD700');
+          document.title = b.siteName || 'Aviv_politics';
+          window.__brand = b;
+        })
+        .catch(() => {});
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
